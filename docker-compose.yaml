@@ -3,7 +3,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    image: asaleem67/frontend:latest
+    image: asaleem67/books-frontend:latest
     container_name: frontend
     ports:
       - 8080:80
@@ -14,7 +14,7 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
-    image: asaleem67/api:latest
+    image: asaleem67/books-api:latest
     container_name: api
     ports:
       - 3000:3000
