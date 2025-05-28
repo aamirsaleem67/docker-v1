@@ -13,7 +13,7 @@ const Books = () => {
       setLoading(true);
       setError(null);
       setHasSearched(true);
-      const response = await axios.get('http://localhost:3001/api/books');
+      const response = await axios.get('http://localhost:3000/api/books');
       setBooks(response.data);
     } catch (err) {
       setError('Failed to fetch books. Make sure the backend API is running on port 3000.');
